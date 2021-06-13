@@ -1,0 +1,56 @@
+#main{
+    padding:1rem ;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    form{
+        height: 20%;
+        fieldset{
+            margin: auto;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            input[type="text"]{
+                width: 60%;
+                height: 50%;
+                font-size: larger;
+                padding-left: 1rem;
+            }
+            button{
+                width: 10%;
+                height: 50%;
+            }
+            label{
+                margin-right: 10px;
+            }
+        }
+    }
+    section{
+        border: 3px inset darkgrey;
+        background-color: gainsboro;
+        flex-grow: 1;
+        padding: 1rem;
+        #methodHeader{
+            display: flex;
+            height: 10%;
+            width: 100%;
+        }
+        span{
+            overflow: hidden;
+            text-align: center;
+            height: 100%;
+            content: "";
+            background-color: ghostwhite;
+            line-height: 2rem;
+            font-size: 1.5rem;
+        }
+        span:nth-child(1){
+            width: 15%;
+            margin-right: 1rem;
+        }
+        span:nth-child(2){
+            width: 100%;
+        }
+    }
+}
