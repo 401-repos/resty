@@ -6,7 +6,8 @@ class Form extends React.Component{
         event.preventDefault();
         const method = event.target.method.value;
         const url = event.target.url.value;
-        const response = await fetch(url, {method: method});
+        const response = await fetch(url, {method: method,
+        mode:'cors'});
         const data = await response.json();
         console.log(data);
         this.props.header(url,method,{data})
