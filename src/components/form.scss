@@ -1,0 +1,24 @@
+form{
+    height: 20%;
+    margin-bottom: 1rem;
+    fieldset{
+        margin: auto;
+        height: 7vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        input[type="text"]{
+            width: 60%;
+            height: 50%;
+            font-size: larger;
+            padding-left: 1rem;
+        }
+        button{
+            width: 10%;
+            height: 50%;
+        }
+        label{
+            margin-right: 10px;
+        }
+    }
+}
