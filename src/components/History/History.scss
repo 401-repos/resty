@@ -1,0 +1,20 @@
+.history{
+    max-height: 70vh;
+    overflow-y: scroll ;
+}
+li{
+    height: 2rem;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    span.method{
+        width: 20%;
+    }
+    span.url{
+        width: 70%;
+    }
+
+}
