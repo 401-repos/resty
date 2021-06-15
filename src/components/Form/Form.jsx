@@ -70,16 +70,16 @@ class Form extends React.Component {
                     </fieldset>
                     <fieldset>
 
-                        <input type="radio" value="GET" name="method" onChange={this.changeMethod} id="GET" checked={this.props.data.method == "GET" || !this.props.data.method} />
+                        <input type="radio" value="GET" name="method" onChange={this.changeMethod} id="GET" checked={this.props.data.method === "GET" || !this.props.data.method} />
                         <label htmlFor="GET">GET</label>
 
-                        <input type="radio" value="POST" name="method" onChange={this.changeMethod} id="POST" checked={this.props.data.method == "POST"} />
+                        <input type="radio" value="POST" name="method" onChange={this.changeMethod} id="POST" checked={this.props.data.method === "POST"} />
                         <label htmlFor="POST">POST</label>
 
-                        <input type="radio" value="PUT" name="method" onChange={this.changeMethod} id="PUT" checked={this.props.data.method == "PUT"} />
+                        <input type="radio" value="PUT" name="method" onChange={this.changeMethod} id="PUT" checked={this.props.data.method === "PUT"} />
                         <label htmlFor="PUT">PUT</label>
 
-                        <input type="radio" value="DELETE" name="method" onChange={this.changeMethod} id="DELETE" checked={this.props.data.method == "DELETE"} />
+                        <input type="radio" value="DELETE" name="method" onChange={this.changeMethod} id="DELETE" checked={this.props.data.method === "DELETE"} />
                         <label htmlFor="DELETE">DELETE</label>
                         <label htmlFor="body">Body</label>
                         <textarea name="body" id="body" ></textarea>

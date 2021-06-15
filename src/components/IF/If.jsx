@@ -3,9 +3,9 @@ import React from 'react';
 class If extends React.Component{
     render(){
         if(this.props.condition){
-            return this.props.children;
+            return <>{this.props.children}</>;
         }else{
-            return null;
+            return <>{null}</>;
         }
     }
 }
