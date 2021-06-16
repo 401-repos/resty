@@ -5,7 +5,7 @@ class Else extends React.Component{
         if(!this.props.condition){
             return <>{this.props.children}</>;
         }else{
-            return <>{null}</>;
+            return <div></div>;
         }
     }
 }
