@@ -13,8 +13,9 @@ class Main extends React.Component {
         this.state = {
             method: '',
             url: '',
-            result: {},
-            loading: true
+            response: {},
+            loading: true,
+            reqBody:{}
         }
         this.toggleLoading = this.toggleLoading.bind(this)
         this.headerHandle = this.headerHandle.bind(this);
@@ -23,8 +24,8 @@ class Main extends React.Component {
         this.setNewMethod = this.setNewMethod.bind(this)
     }
 
-    headerHandle(url, method, result) {
-        this.setState({ url: url, method: method, result: result });
+    headerHandle(url, method, result, body) {
+        this.setState({ url: url, method: method, response: result , body:body });
     }
 
     toggleLoading() {
@@ -45,10 +46,10 @@ class Main extends React.Component {
                 <LoadingScreen />
             </If>
             <Else condition={!this.state.loading}>
-                <Form header={this.headerHandle} changeMethod={this.setNewMethod} setInput={this.setNewChanges} toggleLoading={this.toggleLoading} data={this.state} />
+                <Form init={this.props.redirectStates} setReqBody={this.props.setReqBody} header={this.headerHandle} changeMethod={this.setNewMethod} setInput={this.setNewChanges} toggleLoading={this.toggleLoading} data={this.state} />
                 <div className="hisRes">
-
                 <History state={this.setInfoHistory} />
+
                 <If condition={this.state.url && this.state.method}>
                     <Result data={this.state} />
                 </If>
