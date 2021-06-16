@@ -10,7 +10,7 @@ class Result extends React.Component {
                 <span id="endpoint">{this.props.data.url}</span>
             </div>
             <div id="json">
-            <ReactJson src={this.props.data.result} />
+            <ReactJson src={this.props.data.response} />
             </div>
 
         </section>);

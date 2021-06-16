@@ -1,0 +1,21 @@
+
+
+    .historyPage{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        min-height: 70vh;        
+        background-color: rgba(0, 0, 0, 0.808);
+        padding: 1rem;
+        .response{
+            display: none;
+            height: 100%;
+        }
+        ul{
+            height: 100%;
+            width:55%;
+            max-height: 70vh;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+    }

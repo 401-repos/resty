@@ -10,3 +10,21 @@ main{
     display: flex;
     justify-content: space-evenly;
 }
+.history{
+    flex-grow: 1;
+    background-color: black;
+    padding: 1.5rem;
+    li{
+        background-color: gainsboro;
+        padding: 1rem;
+        border-radius: 20px;
+        margin: 0 0 0.5rem 0 ;
+        transition: ease 200ms;
+        height: 10%;
+    }
+    li:hover{
+        transform:scaleY(1.1) scaleX(1.01);
+        background-color: darkgray;
+        box-shadow: 0 0 10px 1px rgb(218, 215, 215); 
+    }
+}
